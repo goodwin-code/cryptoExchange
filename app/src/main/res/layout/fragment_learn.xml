@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.learn">
+
+    <View
+        android:id="@+id/unsplash_sz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/i"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/b57ac673f06"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/smbt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bitcoin"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/nunito"
+        android:gravity="top"
+        android:text="Bitcoin"
+        android:textAppearance="@style/bitcoin34"
+        android:textFontWeight="700"
+        app:layout_constraintBottom_toBottomOf="@+id/b57ac673f06"
+        app:layout_constraintStart_toEndOf="@+id/b57ac673f06"
+        app:layout_constraintTop_toTopOf="@+id/b57ac673f06" />
+
+    <View
+        android:id="@+id/rectangle_6"
+        android:layout_width="89dp"
+        android:layout_height="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="176dp"
+        android:background="@drawable/verifiedbg"
+        app:layout_constraintBottom_toBottomOf="@+id/bitcoin"
+        app:layout_constraintStart_toEndOf="@+id/bitcoin"
+        app:layout_constraintTop_toTopOf="@+id/bitcoin" />
+
+    <TextView
+        android:id="@+id/verified"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nunito"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="Verified"
+        android:textAppearance="@style/verified"
+        android:textFontWeight="700"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_6"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_6" />
+
+    <View
+        android:id="@+id/check_5_2"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/check"
+        app:layout_constraintBottom_toBottomOf="@+id/verified"
+        app:layout_constraintStart_toEndOf="@+id/verified"
+        app:layout_constraintTop_toTopOf="@+id/verified" />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cryptoguru"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/nunito"
+        android:gravity="top"
+        android:text="@string/cryptoguru"
+        android:textAppearance="@style/cryptoguru"
+        android:textFontWeight="700"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
+
+    <TextView
+        android:id="@+id/benefits_of"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/nunito"
+        android:gravity="top"
+        android:text="Benefits of Buying Bitcoin"
+        android:textAppearance="@style/benefits_of"
+        android:textFontWeight="400"
+        app:layout_constraintStart_toStartOf="@+id/cryptoguru"
+        app:layout_constraintTop_toBottomOf="@+id/cryptoguru" />
+
+    <View
+        android:id="@+id/vector"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="171dp"
+        android:background="@drawable/ic_vector__35_"
+        app:layout_constraintStart_toEndOf="@+id/cryptoguru"
+        app:layout_constraintTop_toTopOf="@+id/cryptoguru" />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito"
+        android:gravity="top"
+        android:text="4040"
+        android:textAppearance="@style/some_id66"
+        android:textFontWeight="700"
+        app:layout_constraintEnd_toEndOf="@+id/vector"
+        app:layout_constraintStart_toStartOf="@+id/vector"
+        app:layout_constraintTop_toBottomOf="@+id/vector" />
+</androidx.constraintlayout.widget.ConstraintLayout>

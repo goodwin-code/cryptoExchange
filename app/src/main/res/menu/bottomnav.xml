@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/home"
+    android:title="Home"
+    android:icon="@drawable/ic_icon"
+    app:showAsAction="withText"/>
+    <item android:id="@+id/portfolio"
+        android:title="Portfolio"
+        android:icon="@drawable/ic_vector__32_"
+        app:showAsAction="withText"/>
+    <item android:id="@+id/arrow"
+        android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/ic_group_21383"/>
+    <item android:id="@+id/learn"
+        android:title="Learn"
+        android:icon="@drawable/ic_group_21378"
+        app:showAsAction="withText"/>
+        />
+    <item android:id="@+id/market"
+        android:title="Market"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_vector__34_"/>
+</menu>

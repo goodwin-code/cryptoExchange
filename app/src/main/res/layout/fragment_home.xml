@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.home">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/cryptocoinh"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="center"
+                android:text="Crypto"
+                android:textAppearance="@style/cryptocoinh"
+                android:textFontWeight="700"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.409"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/nunito"
+                android:gravity="top"
+                android:text="Coin"
+                android:textAppearance="@style/cryptocoinh"
+                android:textColor="#2B45CE"
+                android:textFontWeight="700"
+                app:layout_constraintBottom_toBottomOf="@+id/cryptocoinh"
+                app:layout_constraintStart_toEndOf="@+id/cryptocoinh"
+                app:layout_constraintTop_toTopOf="@+id/cryptocoinh" />
+
+            <View
+                android:id="@+id/vector"
+                android:layout_width="18dp"
+                android:layout_height="14dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/ic_vector__28_"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cryptocoinh" />
+
+            <TextView
+                android:id="@+id/House"
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/nunito"
+                android:gravity="top"
+                android:text="House"
+                android:textAppearance="@style/cryptocoinh"
+                android:textFontWeight="700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/coin"
+                app:layout_constraintTop_toTopOf="@+id/coin" />
+
+            <View
+                android:id="@+id/like"
+                android:layout_width="20dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="51dp"
+                android:background="@drawable/like"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/House"
+                app:layout_constraintTop_toTopOf="@+id/House"
+                app:layout_constraintVertical_bias="0.6" />
+
+            <View
+                android:id="@+id/notification"
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/notification"
+                app:layout_constraintBottom_toBottomOf="@+id/like"
+                app:layout_constraintStart_toEndOf="@+id/like"
+                app:layout_constraintTop_toTopOf="@+id/like" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <View
+                android:id="@+id/unsplash_sf"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/unsplash"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/you_have_fr"
+                android:layout_width="184dp"
+                android:layout_height="44dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="top"
+                android:text="You Have Free Credit worth 500 in your Wallet "
+                android:textAppearance="@style/you_have_fr"
+                android:textFontWeight="700"
+                app:layout_constraintStart_toStartOf="@+id/unsplash_sf"
+                app:layout_constraintTop_toTopOf="@+id/unsplash_sf" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="112dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/button_bg"
+                android:fontFamily="@font/nunito"
+                android:text="Browse Coins"
+                android:textAllCaps="false"
+                android:textColor="#2B45CE"
+                android:textFontWeight="700"
+                app:layout_constraintStart_toStartOf="@+id/you_have_fr"
+                app:layout_constraintTop_toBottomOf="@+id/you_have_fr" />
+
+            <View
+                android:id="@+id/ellipse_292"
+                android:layout_width="81.3dp"
+                android:layout_height="83dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/ic_ellipse_2927"
+                app:layout_constraintBottom_toBottomOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="@+id/unsplash_sf"
+                app:layout_constraintStart_toEndOf="@+id/you_have_fr"
+                app:layout_constraintTop_toTopOf="@+id/unsplash_sf" />
+
+            <View
+                android:id="@+id/sound"
+                android:layout_width="8dp"
+                android:layout_height="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ic_vector__29_"
+                app:layout_constraintBottom_toBottomOf="@+id/ellipse_292"
+                app:layout_constraintEnd_toEndOf="@+id/ellipse_292"
+                app:layout_constraintStart_toStartOf="@+id/ellipse_292"
+                app:layout_constraintTop_toTopOf="@+id/ellipse_292" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="2dp"
+                android:layout_height="4dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ic_vector__30_"
+                app:layout_constraintBottom_toBottomOf="@+id/sound"
+                app:layout_constraintStart_toEndOf="@+id/sound"
+                app:layout_constraintTop_toTopOf="@+id/sound" />
+
+            <View
+                android:id="@+id/lin35"
+                android:layout_width="1dp"
+                android:layout_height="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ic_vector__31_"
+                app:layout_constraintBottom_toBottomOf="@+id/line"
+                app:layout_constraintStart_toEndOf="@+id/line"
+                app:layout_constraintTop_toTopOf="@+id/line"
+                app:layout_constraintVertical_bias="0.333" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <TextView
+                android:id="@+id/coins_for_y"
+                android:layout_width="99dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="0sp"
+                android:text="Coins for you!"
+                android:textAppearance="@style/coins_for_y"
+                android:textFontWeight="700"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/tabTheme"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tabIndicatorColor="#2B45CE"
+                app:tabInlineLabel="true"
+                app:tabPadding="0dp"
+                app:tabGravity="fill"
+                app:tabSelectedTextColor="#2B45CE"
+                app:tabTextAppearance="@style/trending">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/trending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Trending" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/beginners"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For Beginners" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:id="@+id/gainer"
+                    android:layout_height="wrap_content"
+                    android:text="Gainer" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/loser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loser" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Favourites" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout5"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout5"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+            <include
+                layout="@layout/data"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
